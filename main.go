@@ -3,8 +3,7 @@ package main
 //import "fmt"
 
 func main() {
-	//cards := []string{"Ace of Diamonds", newCard()}
-	cards:= newDeck() // calling the function to assign value to cards
-	cards.print() // calling the print function to print the cards
+	cards:= newDeck()
+	cards.shuffle() // shuffle the deck of cards
+	cards.print() // print the deck of cards
 }
-	
