@@ -1,14 +1,11 @@
 package main
 
+import "fmt"
+
 //import "fmt"
 
 func main() {
-	//cards := []string{"Ace of Diamonds", newCard()}
-	cards:= newDeck() // calling the function to assign value to cards
 
-	hand, remainingCards := deal(cards, 5) // calling the function to deal cards
-
-	hand.print()
-	remainingCards.print() // printing the remaining cards
+	cards := newDeck()            // calling the function to assign value to cards
+	fmt.Println(cards.toString()) // calling the function to convert the deck to a string
 }
-	
