@@ -5,6 +5,10 @@ package main
 func main() {
 	//cards := []string{"Ace of Diamonds", newCard()}
 	cards:= newDeck() // calling the function to assign value to cards
-	cards.print() // calling the print function to print the cards
+
+	hand, remainingCards := deal(cards, 5) // calling the function to deal cards
+
+	hand.print()
+	remainingCards.print() // printing the remaining cards
 }
 	

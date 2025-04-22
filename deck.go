@@ -26,3 +26,7 @@ func (d deck) print() {
 		println(i, card) // printing the index and the card
 	}
 }
+
+func deal(d deck, handSize int) (deck, deck) {
+	return d[:handSize], d[handSize:] // returning the hand and the remaining deck
+}
